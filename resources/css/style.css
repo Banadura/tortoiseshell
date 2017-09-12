@@ -1,3 +1,5 @@
+/* Mobile-first design */
+
 html {
   font-size: 18px;
   line-height: 1.4;
@@ -17,29 +19,32 @@ h1 {
 }
 
 .page {
-  display: flex;
   flex-direction: column;
+}
+
+.container {
+  display: flex;
 }
 
 /* --------------- Header -------------------- */
 
 header {
-  display: flex;
   flex-direction: column;
   background-image: url("../images/glasses-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 0% 20%;
   height: 17rem;
 }
 
 nav {
-  display: flex;
+  position: fixed;
+  top: 0px;
   justify-content: space-between;
   align-items: center;
-  width: 100&;
+  width: 100%;
   background-color: cadetblue;
   color: white;
-  padding: 1rem 2rem;
 }
 
 .logo {
@@ -49,10 +54,19 @@ nav {
 .logo img {
   height: 1.5rem;
   padding-right: 1rem;
+  padding-left: 2rem;
+}
+
+.menu {
+  align-items: center;
 }
 
 .menu ul {
   display: none;
+}
+
+.menu p {
+  padding: 1rem 2rem;
 }
 
 #companyname {
@@ -62,23 +76,72 @@ nav {
 /* Slogan */
 
 .slogan {
-  display: flex;
   justify-content: center;
   width: 100%;
   background-color: white;
-  margin-top: 9rem;
+  margin-top: 12rem;
 }
 
 /* Icons */
 
 .icons {
-  display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 3.77rem;
 }
 
 .icons figure {
   height: 8rem;
   width: 5rem;
-  margin: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons img {
+  max-height: 5rem;
+  max-width: 5rem;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 0.77rem;
+  margin-top: 1rem;
+}
+
+/* Copy */
+
+.copy {
+  flex-direction: column;
+}
+
+.titlebox {
+  justify-content: center;
+  align-items: center;
+  background-color: cadetblue;
+  color: white;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+
+.copy p {
+  margin: 0 1rem;
+  margin-bottom: 4rem;
+}
+
+/* Footer */
+
+footer {
+  justify-content: center;
+  background-color: azure;
+}
+
+footer img {
+  height: 1.5rem;
+  padding: 4rem;
+}
+
+footer p {
+  display: none;
 }
