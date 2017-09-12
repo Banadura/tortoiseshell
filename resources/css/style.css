@@ -68,3 +68,17 @@ nav {
   background-color: white;
   margin-top: 9rem;
 }
+
+/* Icons */
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icons figure {
+  height: 8rem;
+  width: 5rem;
+  margin: 3rem;
+}
