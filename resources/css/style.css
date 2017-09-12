@@ -21,6 +21,8 @@ h1 {
   flex-direction: column;
 }
 
+/* --------------- Header -------------------- */
+
 header {
   display: flex;
   flex-direction: column;
@@ -32,13 +34,15 @@ header {
 
 nav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100&;
   background-color: cadetblue;
   color: white;
+  padding: 1rem 2rem;
 }
 
 .logo {
-  display: flex;
   align-items: center;
 }
 
@@ -47,19 +51,20 @@ nav {
   padding-right: 1rem;
 }
 
+.menu ul {
+  display: none;
+}
+
 #companyname {
   display: none;
 }
 
-nav p {
-  position: fixed;
-  right: 20%;
-}
-
-
 /* Slogan */
 
 .slogan {
+  display: flex;
+  justify-content: center;
   width: 100%;
+  background-color: white;
   margin-top: 9rem;
 }
